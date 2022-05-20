@@ -8,7 +8,7 @@ def app():
         with st.sidebar:
           st.markdown('<center><a href="https://www.linkedin.com/in/abed-el-rahman-al-estwani/"><img style="max-width:75%" src="https://raw.githubusercontent.com/NythBusters/pics/main/Bustem.png"></center>', unsafe_allow_html= True)
           st.markdown('<center><span style="font-size: 130%; color: #E1AD01;"><br> Understanding the correlation between Recency, Frequency, and Monetary.</span></center>', unsafe_allow_html= True)
-        df_agg = pd.read_csv(r'C:\Users\itm\Desktop\Multipage\apps\Cluster_data.csv') #reading the agg file that has the cluster names and their fields
+        df_agg = pd.read_csv(r'data\Cluster_data.csv') #reading the agg file that has the cluster names and their fields
         df_agg = df_agg[["RecencyMean", "FrequencyMean", "MonetaryMean"]]
         col1,col2,col3 = st.columns([0.33,0.33,0.33])
         # Visualizing correlation coefficients between features and cancellation:
