@@ -9,19 +9,19 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
-main_bg_ext = r"\apps\Images\BG.png"
+#main_bg_ext = r"\apps\Images\BG.png"
        
-st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg_ext, "rb").read()).decode()});
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+#st.markdown(
+        # f"""
+         #<style>
+        # .stApp {{
+           #  background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg_ext, "rb").read()).decode()});
+           #  background-size: cover
+       #  }}
+        # </style>
+        # """,
+       #  unsafe_allow_html=True
+    # )
 
 app = MultiApp()
 
