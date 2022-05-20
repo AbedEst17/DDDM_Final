@@ -7,7 +7,7 @@ def app():
         with st.sidebar:
           st.markdown('<center><a href="https://www.linkedin.com/in/abed-el-rahman-al-estwani/"><img style="max-width:75%" src="https://raw.githubusercontent.com/NythBusters/pics/main/Bustem.png"></center>', unsafe_allow_html= True)
           st.markdown('<center><span style="font-size: 130%; color: #E1AD01;"><br> Understanding the behavioral patterns through the lense of Recency, Frequency, and Monetary.</span></center>', unsafe_allow_html= True)
-        df_agg = pd.read_csv(r'C:\Users\itm\Desktop\Multipage\apps\Cluster_data.csv') #reading the agg file that has the cluster names and their fields
+        df_agg = pd.read_csv(r'data\Cluster_data.csv') #reading the agg file that has the cluster names and their fields
         fig2 = px.bar(df_agg, x="Cluster_name", y="MonetaryMean", title = "Monetary mean value of each cluster") #setting the bar graph for the clusters' monetary mean
         fig2.update_xaxes(title_text="Cluster name")
         fig2.update_xaxes(showgrid=False)
