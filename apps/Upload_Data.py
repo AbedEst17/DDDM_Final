@@ -12,7 +12,7 @@ def app():
         if uploaded_file is not None: #if the data is not uploaded
             data = pd.read_csv(uploaded_file) #read the file
             data.to_csv('data/main_data.csv', index=False) #save the file into a csv into the folder to carry it to the other pages
-        ('data/main_data.csv', index=False)
+ 
         else:
             data = ""
         
