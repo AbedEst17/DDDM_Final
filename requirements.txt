@@ -2,9 +2,7 @@ pandas
 numpy
 sklearn
 plotly.express
-
 datetime
 matplotlib
 seaborn
-pickle
-asyncio.windows_events
+
