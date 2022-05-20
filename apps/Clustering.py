@@ -62,7 +62,7 @@ def app():
 
      data_process['Cluster_name'] = data_process['Cluster_name'].map(labels_dict) #mapping the names on the previous data frame
 
-     df_agg.to_csv(r'C:\Users\itm\Desktop\Multipage\apps\Cluster_data.csv', index=False) #saving the dataframe df_agg into csv file to carry it to other pages
+     df_agg.to_csv(r'data/Cluster_data.csv', index=False) #saving the dataframe df_agg into csv file to carry it to other pages
 
      fig = px.scatter(df_agg, x="RecencyMean", y="MonetaryMean", size = "FrequencyMean", color = "Cluster_name", hover_name ="Cluster_name", size_max = 100, title= "Customer Clusters by RFM") #visualizing the clusters
      fig.update_xaxes(title_text="Recency Mean")#adding title
