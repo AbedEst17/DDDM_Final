@@ -2,7 +2,7 @@ pandas
 numpy
 sklearn
 plotly.express
-os
+
 datetime
 matplotlib.pyplot
 seaborn
