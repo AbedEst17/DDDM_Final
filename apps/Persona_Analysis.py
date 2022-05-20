@@ -9,7 +9,7 @@ def app():
         with st.sidebar:
           st.markdown('<center><a href="https://www.linkedin.com/in/abed-el-rahman-al-estwani/"><img style="max-width:75%" src="https://raw.githubusercontent.com/NythBusters/pics/main/Bustem.png"></center>', unsafe_allow_html= True)
           st.markdown('<center><span style="font-size: 130%; color: #E1AD01;"><br> Meet our customers.</span></center>', unsafe_allow_html= True)
-        df_agg = pd.read_csv(r'C:\Users\itm\Desktop\Multipage\apps\Cluster_data.csv') #reading the agg file that has the cluster names and their fields
+        df_agg = pd.read_csv(r'data/Cluster_data.csv') #reading the agg file that has the cluster names and their fields
         persona_list = [i for i in df_agg["Cluster_name"]] #turning the names of the clusters into a list to be used in the selectbox
         col1,col2,col3 = st.columns([0.33,0.33,0.33])
         with col1:
