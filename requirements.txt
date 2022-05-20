@@ -2,7 +2,6 @@ pandas
 numpy
 sklearn
 plotly.express
-base64
 os
 datetime
 matplotlib.pyplot
