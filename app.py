@@ -9,7 +9,7 @@ st.set_page_config(
      layout="wide",
      initial_sidebar_state="expanded")
 
-main_bg_ext = r"C:\Users\itm\Desktop\Multipage\apps\Images\BG.png"
+main_bg_ext = r"apps\Images\BG.png"
        
 st.markdown(
          f"""
