@@ -10,7 +10,7 @@ def app():
      with st.sidebar:
           st.markdown('<center><a href="https://www.linkedin.com/in/abed-el-rahman-al-estwani/"><img style="max-width:75%" src="https://raw.githubusercontent.com/NythBusters/pics/main/Bustem.png"></center>', unsafe_allow_html= True) #setting the avatar
           st.markdown('<center><span style="font-size: 130%; color: #E1AD01;"><br> Our customers can be grouped into clusters that share common behavioral patterns.</span></center>', unsafe_allow_html= True) #setting a comment under the avatar
-     df = pd.read_csv(r'data/main_data.csv') #reading the data carried over
+     df = pd.read_csv('data/main_data.csv') #reading the data carried over
 
      df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"]) #changing the date from string to datetime
      # --Group data by customerID--
@@ -19,9 +19,9 @@ def app():
      print(snapshot_date)
      # Grouping by CustomerID
      data_process = df.groupby(['CustomerID']).agg({
-          'InvoiceDate': lambda x: (snapshot_date - x.max()).days, # this allows us to get recency 
-          'InvoiceNo': 'count', #this allows us to get frequency
-          'Sales': 'sum'}) #this allows us to get the monetary
+          'InvoiceDate': lambda x: (snapshot_date - x.max()).days,  
+          'InvoiceNo': 'count', 
+          'Sales': 'sum'}) #this allows us to get the monetary, recency and frequency
      # Rename the columns 
      data_process.rename(columns={'InvoiceDate': 'Recency',
                               'InvoiceNo': 'Frequency',
