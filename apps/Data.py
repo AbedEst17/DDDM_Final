@@ -14,7 +14,7 @@ def app():
             st.warning("Please upload data through `Upload Data` page!") # the warning message.
          else: # if the data is uploaded, we will proceed forward.
           global df
-          df = pd.read_csv(r'C:\Users\itm\Desktop\Multipage\apps\main_data.csv') # read the csv file
+          df = pd.read_csv(r'data/main_data.csv') # read the csv file
           df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"]) #change the InvoiceDate into datetime data type
          
           df.dropna(subset=['CustomerID'], inplace=True) # Drop null values
