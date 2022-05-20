@@ -10,7 +10,7 @@ def app():
          with st.sidebar:
           st.markdown('<center><a href="https://www.linkedin.com/in/abed-el-rahman-al-estwani/"><img style="max-width:75%" src="https://raw.githubusercontent.com/NythBusters/pics/main/Bustem.png"></center>', unsafe_allow_html= True)
           st.markdown('<center><span style="font-size: 130%; color: #E1AD01;"><br> Data in the right hands, is the greatest competitve edge.</span></center>', unsafe_allow_html= True)
-         if 'main_data.csv' not in os.listdir(r'C:\Users\itm\Desktop\Multipage\apps'): #if data is not uploaded we have to set a warning message.
+         if 'main_data.csv' not in os.listdir(r'\apps'): #if data is not uploaded we have to set a warning message.
             st.warning("Please upload data through `Upload Data` page!") # the warning message.
          else: # if the data is uploaded, we will proceed forward.
           global df
