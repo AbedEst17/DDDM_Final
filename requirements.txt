@@ -4,7 +4,7 @@ sklearn
 plotly.express
 
 datetime
-matplotlib.pyplot
+matplotlib
 seaborn
 pickle
 asyncio.windows_events
